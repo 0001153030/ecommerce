@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="574.0" fitWidth="862.0" layoutY="-1.0" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../top-view-laptop-notebook-flowerpots-dark-background.jpg" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#bcbcbc" />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="456.0" layoutX="116.0" layoutY="58.0" opacity="0.33" stroke="WHITE" strokeType="INSIDE" width="629.0">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Rectangle>
+      <Label layoutX="396.0" layoutY="76.0" text="Olá!">
+         <font>
+            <Font name="Segoe UI Bold" size="36.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="162.0" layoutY="133.0" text="Login:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="206.0" text="Senha:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="544.0" layoutY="207.0" />
+      <TextField layoutX="544.0" layoutY="134.0" />
+      <Button layoutX="370.0" layoutY="371.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Entrar" />
+      <CheckBox layoutX="361.0" layoutY="327.0" mnemonicParsing="false" text="Lembre-se deste login" />
+   </children>
+</Pane>
