@@ -1,0 +1,12 @@
+module ecommerce {
+    requires java.sql;
+    requires javafx.base;
+    requires javafx.controls;
+    requires javafx.fxml;
+    requires javafx.graphics;
+    requires mysql.connector.j;
+
+    opens com.example.ecommerce to javafx.fxml;
+    opens com.example.ecommerce.Controller to javafx.fxml;
+    exports com.example.ecommerce;
+}
